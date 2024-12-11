@@ -1,0 +1,92 @@
+:root{
+    --cor-fundo:black;
+    --cor-fonte:rgb(221, 224, 11);
+    --cor-titulo:rgba(250, 67, 91, 0.925);
+
+}
+body{
+    background-image:url(bkimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    color: var(--cor-fonte);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.conteiner{
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 20px;  
+    
+}
+.conteiner h1{
+    display: flex;
+    justify-content: center;
+    color: var(--cor-titulo);
+}
+.btn-add{
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor-titulo);
+    font-size:20px;
+    transition-duration: 80ms;
+}
+.conteiner input{
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 300px;
+    font-size: large;
+}
+.conteinercontent ul, li{
+    text-transform: capitalize;
+    font-size: larger;
+    color: var(--cor-fonte);
+    list-style: none;
+
+}
+
+.btn-add:hover{
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.lista li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista li:hover{
+    color: red;
+}
+.btn-li{
+    border-radius: 5px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    cursor: pointer;
+}
+
+#btn-ok{
+    border: none;
+    border-radius: 3rem;
+    background-color: rgb(65, 206, 0);
+    padding: .4rem .8rem;
+    color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#btn-ok:hover{
+    background-color: green;
+}
